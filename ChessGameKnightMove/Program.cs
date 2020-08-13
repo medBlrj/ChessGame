@@ -1,13 +1,35 @@
 ﻿using System;
+using ChessGameKnightMove;
 
-namespace ChessGameKnightMove
+namespace ChessGame
 {
-    class Program
+
+    public class Program
+
     {
+        public static int Demtion;
+
         static void Main(string[] args)
+
+
         {
-            Console.WriteLine("Hello World! mohamed bellarej");
+            
+            ChessBoard ChessBoard = new ChessBoard();
+            SetupBoard Board = new SetupBoard();
+
+            SetupBoard.SetUp();
+            Board.getInput();
+            KnightPath.knightPath();
+
+
+            Knight.Knight_Path();
+            ChessBoard.displayChessBoard();
+            Console.ReadLine();
+            Console.WriteLine("");
 
         }
     }
+
+
+
 }

@@ -1,0 +1,12 @@
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\bin\Debug\netcoreapp2.1\ChessGameKnightMove.deps.json
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\bin\Debug\netcoreapp2.1\ChessGameKnightMove.runtimeconfig.json
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\bin\Debug\netcoreapp2.1\ChessGameKnightMove.runtimeconfig.dev.json
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\bin\Debug\netcoreapp2.1\ChessGameKnightMove.dll
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\bin\Debug\netcoreapp2.1\ChessGameKnightMove.pdb
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\obj\Debug\netcoreapp2.1\ChessGameKnightMove.csprojAssemblyReference.cache
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\obj\Debug\netcoreapp2.1\ChessGameKnightMove.AssemblyInfoInputs.cache
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\obj\Debug\netcoreapp2.1\ChessGameKnightMove.AssemblyInfo.cs
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\obj\Debug\netcoreapp2.1\ChessGameKnightMove.csproj.CoreCompileInputs.cache
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\obj\Debug\netcoreapp2.1\ChessGameKnightMove.dll
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\obj\Debug\netcoreapp2.1\ChessGameKnightMove.pdb
+C:\Users\Packardbell\source\repos\ChessGameKnightMove\ChessGameKnightMove\obj\Debug\netcoreapp2.1\ChessGameKnightMove.genruntimeconfig.cache
