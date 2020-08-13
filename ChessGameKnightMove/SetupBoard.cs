@@ -65,14 +65,14 @@ namespace ChessGameKnightMove
             do
             {
 
-                Console.Write("\n Please enter Chess board d 0 - 15  , or type Q to quit \n ==> ");
+                Console.Write("\n Please enter Chess board d 3 - 15  , or type Q to quit \n ==> ");
                 input = Console.ReadLine();
                 if (!input.ToUpper().Equals("Q"))
                 {
                     int number = 0;
                     if (int.TryParse(input, out number))
                     {
-                        if (number >= 0 && number <= 15)
+                        if (number >= 3 && number <= 15)
                         {
                             Demtion = number;
                             ChessBoard.intialeBoard();
@@ -80,15 +80,14 @@ namespace ChessGameKnightMove
                         }
                         else
                         {
-                            Console.ForegroundColor = ConsoleColor.DarkRed;
-                            Console.Write("ERROR :");
-                            Console.ResetColor();
-                            Console.BackgroundColor = ConsoleColor.White;
-                            Console.ForegroundColor = ConsoleColor.Black;
-                            Console.WriteLine(" Invalid input. \n  ");
+                            invalidInputMesseg();
                         }
 
-                      
+
+                    }
+                    else
+                    {
+                        invalidInputMesseg();
                     }
 
                    
@@ -176,13 +175,7 @@ namespace ChessGameKnightMove
 
             if (error)
             {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.Write("ERROR :");
-                Console.ResetColor();
-                Console.BackgroundColor = ConsoleColor.White;
-                Console.ForegroundColor = ConsoleColor.Black;
-                Console.WriteLine(" Invalid input. \n  ");
-
+                invalidInputMesseg();
 
                 knightPosX = 0;
                 knightPosy = 0;
@@ -193,6 +186,18 @@ namespace ChessGameKnightMove
 
 
             return error;
+        }
+
+        private static void invalidInputMesseg()
+        {
+
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("ERROR :");
+            Console.ResetColor();
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine(" Invalid input. \n  ");
+
         }
 
 

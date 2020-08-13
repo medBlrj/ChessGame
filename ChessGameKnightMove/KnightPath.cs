@@ -10,6 +10,7 @@ namespace ChessGameKnightMove
         static int Cx, Cy;
         public static List<int> currentX, currentY;
         public static bool[,] Valide;
+        public static bool solution;
 
 
         readonly static int[,] moves = { {+1,-2},{+2,-1},{+2,+1},{+1,+2},
@@ -25,6 +26,7 @@ namespace ChessGameKnightMove
 
         public static void knightPath()
         {
+            solution = true;
             int[,] board = new int[Demtion, Demtion];
             currentX = new List<int>();
             currentY = new List<int>();
@@ -72,6 +74,7 @@ namespace ChessGameKnightMove
                         if (list.Count == 0)
                         {
                             Console.WriteLine("No solution found.");
+                            solution = false;
                             return;
                         }
                         x = list[list.Count - 1].x;
@@ -105,7 +108,7 @@ namespace ChessGameKnightMove
 
         static bool Move_Possible(int[,] board, int cur_x, int cur_y)
         {
-            if (board[cur_x, cur_y] >= 8)
+            if (board[cur_x, cur_y] >= Demtion)
                 return false;
 
             int new_x = cur_x + moves[board[cur_x, cur_y], 0],
@@ -137,4 +140,5 @@ namespace ChessGameKnightMove
 
         }
     }
-  }
+}
+

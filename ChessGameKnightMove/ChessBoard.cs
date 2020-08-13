@@ -65,7 +65,7 @@ namespace ChessGameKnightMove
             }
 
 
-            Console.Write("+ \n\n \n ");
+            Console.Write("+ \n\n \n");
 
 
         }

@@ -8,12 +8,12 @@ namespace ChessGame
 
     {
         public static int Demtion;
-
+        public static bool Solution;
         static void Main(string[] args)
 
 
         {
-            
+
             ChessBoard ChessBoard = new ChessBoard();
             SetupBoard Board = new SetupBoard();
 
@@ -22,10 +22,19 @@ namespace ChessGame
             KnightPath.knightPath();
 
 
-            Knight.Knight_Path();
-            ChessBoard.displayChessBoard();
-            Console.ReadLine();
-            Console.WriteLine("");
+            Solution = KnightPath.solution;
+            if (Solution)
+            {
+                Knight.KnightMove();
+
+                ChessBoard.displayChessBoard();
+
+                Console.WriteLine("");
+            }
+            else
+            {
+                Console.WriteLine("try it agin");
+            }
 
         }
     }
@@ -33,3 +42,4 @@ namespace ChessGame
 
 
 }
+

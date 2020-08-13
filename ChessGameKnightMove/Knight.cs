@@ -13,10 +13,10 @@ namespace ChessGameKnightMove
         public Knight()
         {
 
-            Knight_Path();
+            KnightMove();
         }
 
-        public static void Knight_Path()
+        public static void KnightMove()
         {
             knight_Pos = new string[SetupBoard.Demtion, SetupBoard.Demtion];
             M = "K";
