@@ -12,9 +12,8 @@ namespace ChessGameKnightMove
         public static bool[,] Valide;
         public static bool solution;
 
-
         readonly static int[,] moves = { {+1,-2},{+2,-1},{+2,+1},{+1,+2},
-                                     {-1,+2},{-2,+1},{-2,-1},{-1,-2} };
+                               {-1,+2},{-2,+1},{-2,-1},{-1,-2} };
         struct ListMoves
         {
             public int x, y;
@@ -52,7 +51,12 @@ namespace ChessGameKnightMove
 
             do
             {
-
+                if (x == pathx && y ==pathY)
+                {
+                    
+                    break;
+                }
+                else {
                 if (Move_Possible(board, x, y))
                 {
                     int move = board[x, y];
@@ -86,6 +90,7 @@ namespace ChessGameKnightMove
                     board[x, y]++;
                 }
 
+            }
             }
 
             while (!Test_Position(currentX, currentY, pathx, pathY));
